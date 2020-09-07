@@ -7,7 +7,7 @@
     "test": "editorconfig-checker",
     "send_r": "scp *.php *.png *.css vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
     
-    "mk_part_carbon": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/template-parts\"",
+    "mk_part_carbon": "ssh vaganol6_ssh@vaganol6.beget.tech \"mkdir -p wp.syamba-toys.ru/public_html/wp-content/themes/syambatoystemplate-parts\"",
     "send_carbon": "scp -r carbon-fields vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
     
     "mk_part_dir": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/template-parts\"",
