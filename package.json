@@ -5,19 +5,26 @@
   "main": "index.php",
   "scripts": {
     "test": "editorconfig-checker",
-    "send_r": "scp -C *.php *.png *.css asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi",
+    "send_r": "scp *.php *.png *.css vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "mk_part_carbon": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/template-parts\"",
-    "send_carbon": "scp -C -r carbon-fields asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi/",
+    "send_carbon": "scp -r carbon-fields vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "mk_part_dir": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/template-parts\"",
-    "send_part": "scp -C -r template-parts asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi/",
+    "send_part": "scp -r template-parts vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "mk_part_img": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/img\"",
-    "send_img": "scp -r img asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi/",
+    "send_img": "scp -r img vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "mk_part_js": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/js\"",
-    "send_js": "scp -r js asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi/",
+    "send_js": "scp -r js vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "mk_part_css": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/css\"",
-    "send_css": "scp -C -r css asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi/",
+    "send_css": "scp  -r css vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "mk_part_fonts": "ssh asmi046@asmi046.myjino.ru \"mkdir -p domains/almi.asmi-studio.ru/wp-content/themes/Almi/fonts\"",
-    "send_fonts": "scp -C -r fonts asmi046@asmi046.myjino.ru:domains/almi.asmi-studio.ru/wp-content/themes/Almi/",
+    "send_fonts": "scp -r fonts vaganol6_ssh@vaganol6.beget.tech:wp.syamba-toys.ru/public_html/wp-content/themes/syambatoys",
+    
     "send_all": "npm run send_r & npm run send_css & npm run send_part & npm run send_img & npm run send_js & npm run send_fonts"
   },
   "repository": {
