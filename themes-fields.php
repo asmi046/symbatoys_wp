@@ -12,7 +12,11 @@ use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
 Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
-		->add_fields( array(
-			Field::make( 'text', 'crb_text', 'Text Field' ),
-        ) );
+	->add_tab( __( 'Контакты' ), array(
+		Field::make( 'text', 'st_caompany', 'Организация' ),
+		Field::make( 'text', 'st_inn', 'ИНН' ),
+		Field::make( 'text', 'st_ogrn', 'ОГРН' ),
+		Field::make( 'text', 'st_phone', 'Телефон' ),
+		Field::make( 'text', 'st_worktime', 'Время работы' ),
+    ));
 ?>
