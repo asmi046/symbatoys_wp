@@ -42,7 +42,7 @@
 		</div>
 
         <!-- Телефон -->
-        <a href="tel:88005110179" class="header-phone">8 800 511-01-70</a>
+        <a href="tel:<?$phoneF = carbon_get_theme_option( 'st_phone' ); echo preg_replace('/[^0-9]/', '', $phoneF);?>" class="header-phone"><? echo $phoneF;?></a>
 
         </div>
       
