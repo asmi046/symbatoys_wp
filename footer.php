@@ -10,16 +10,9 @@
         <div class="footer-left-title"><a href="#">Политика конфиденциальности</a></div>
         <div class="footer-left-title"><a href="#">Разработка сайта Asmi-Studio.ru</a></div>
       </div>
-      <ul class="footer-block footer-menu ul-clean">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Акции</a></li>
-        <li><a href="#">Обмен / возврат</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Опт и сотрудничество</a></li>
-      </ul>
+      
+      <?php  wp_nav_menu( array('theme_location' => 'footer_menu', 'menu_id' => "menu-footer", 'container' => false,'menu_class'=>"footer-block footer-menu ul-clean")); ?>
+
       <div class="footer-block footer-block__pay">
         <div class="footer-block__title">Способы оплаты</div>
         <p class="footer-block__subtitle">Вы можете оплатить покупки наличными при получении, <br> либо онлайн.</p>

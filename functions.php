@@ -28,7 +28,8 @@ function crb_load() {
 // если 2 меню в шапке пишем  - Меню в шапке (верхняя часть)
 
 register_nav_menus( array(
-	'header_menu' => 'Главное меню'
+	'header_menu' => 'Главное меню',
+	'footer_menu' => 'Меню в подвале'
 ) );
 
 add_theme_support( 'post-thumbnails' );

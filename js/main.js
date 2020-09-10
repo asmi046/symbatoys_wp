@@ -6,7 +6,7 @@ function isEmail(email) {
 
 /*Test*/ 
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
 	
 	/*Слайдер На главной*/
 	$('.main-bnr .container').slick({
@@ -75,19 +75,19 @@ jQuery(document).ready(function() {
 
 // Что то про меню
 
-const icons = document.querySelectorAll('.icon');
-icons.forEach (icon => {  
-	icon.addEventListener('click', (event) => {
-    icon.classList.toggle("open");
-  });
-});
+// const icons = document.querySelectorAll('.icon');
+// icons.forEach (icon => {  
+// 	icon.addEventListener('click', (event) => {
+//     icon.classList.toggle("open");
+//   });
+// });
 
-$(function () {
-  $('.mobile_menu-svg').click(function () {
-    $('.main-mobile-menu').toggleClass('mobile-menu')
-    $('body').toggleClass('lock')
-  })  
-});
+// $(function () {
+//   $('.mobile_menu-svg').click(function () {
+//     $('.main-mobile-menu').toggleClass('mobile-menu')
+//     $('body').toggleClass('lock')
+//   })  
+// });
 
 
 /* При нажатии кнопки, переключаться между скрытием 
